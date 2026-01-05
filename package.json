@@ -1,0 +1,31 @@
+{
+  "name": "root",
+  "devDependencies": {
+    "@changesets/cli": "2.29.8",
+    "@commitlint/cli": "20.3.0",
+    "@commitlint/config-conventional": "20.3.0",
+    "@commitlint/prompt-cli": "20.3.0",
+    "husky": "9.1.7",
+    "knip": "5.79.0",
+    "lint-staged": "16.2.7",
+    "turbo": "2.7.2"
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "commit": "commit",
+    "format": "turbo run format",
+    "lint": "turbo run lint",
+    "prepare": "husky && turbo telemetry disable",
+    "prerelease": "pnpm run build",
+    "release": "changeset publish",
+    "test:integration": "turbo test:integration",
+    "test": "turbo run test",
+    "test:coverage": "turbo run test:coverage",
+    "test:uncommitted": "turbo run test:uncommitted --filter [HEAD]",
+    "test:unit": "turbo run test:unit",
+    "unused": "knip"
+  },
+  "license": "MIT",
+  "packageManager": "pnpm@10.26.1",
+  "private": true
+}

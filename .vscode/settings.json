@@ -1,0 +1,6 @@
+{
+  "eslint.workingDirectories": [
+    { "pattern": "./packages/backend/*", "!cwd": false },
+    { "pattern": "./packages/backend/tools/*", "!cwd": false }
+  ]
+}

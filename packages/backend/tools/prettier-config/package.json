@@ -1,0 +1,25 @@
+{
+  "author": "Roberto Pintos López",
+  "name": "@hexkit/foundation-prettier-config",
+  "description": "Common prettier config for hexkit monorepo packages",
+  "exports": {
+    ".": {
+      "import": "./esm/index.js",
+      "require": "./cjs/index.js"
+    }
+  },
+  "type": "module",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hexkit/monorepo/issues"
+  },
+  "homepage": "https://github.com/hexkit/monorepo#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hexkit/monorepo.git"
+  },
+  "version": "0.1.0"
+}

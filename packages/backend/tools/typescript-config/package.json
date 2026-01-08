@@ -1,0 +1,22 @@
+{
+  "author": "Roberto Pintos López",
+  "name": "@hexkit/typescript-config",
+  "description": "Common typescript config for hexkit monorepo packages",
+  "devDependencies": {
+    "@hexkit/prettier-config": "workspace:*",
+    "prettier": "3.7.4"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hexkit/monorepo/issues"
+  },
+  "homepage": "https://github.com/hexkit/monorepo#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hexkit/monorepo.git"
+  },
+  "version": "0.1.0"
+}

@@ -7,7 +7,7 @@
   "devDependencies": {
     "@hexkit/eslint-config": "workspace:*",
     "@hexkit/prettier-config": "workspace:*",
-    "@inversifyjs/foundation-typescript-config": "0.1.1",
+    "@hexkit/typescript-config": "workspace:*",
     "eslint": "9.39.2",
     "prettier": "3.7.4",
     "rimraf": "6.1.2",

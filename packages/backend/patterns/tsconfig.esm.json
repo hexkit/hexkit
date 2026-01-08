@@ -1,6 +1,6 @@
 {
   "$schema": "http://json.schemastore.org/tsconfig",
-  "extends": "@inversifyjs/foundation-typescript-config/tsconfig.base.esm.json",
+  "extends": "@hexkit/typescript-config/tsconfig.base.esm.json",
   "compilerOptions": {
     "outDir": "./lib",
     "rootDir": "./src",

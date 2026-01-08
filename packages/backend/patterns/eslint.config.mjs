@@ -1,3 +1,3 @@
-import { buildDefaultConfig } from '@inversifyjs/foundation-eslint-config';
+import { buildDefaultConfig } from '@hexkit/eslint-config';
 
 export default [...buildDefaultConfig()];

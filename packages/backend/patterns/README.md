@@ -1,3 +1,3 @@
 # @hexkit/patterns
 
-Inversify monorepo common modules.
+Hexkit patterns modules.

@@ -1,6 +1,6 @@
 {
   "author": "Roberto Pintos López",
-  "name": "@hexkit/foundation-prettier-config",
+  "name": "@hexkit/prettier-config",
   "description": "Common prettier config for hexkit monorepo packages",
   "exports": {
     ".": {

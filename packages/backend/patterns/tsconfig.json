@@ -3,8 +3,7 @@
   "extends": "@hexkit/typescript-config/tsconfig.base.esm.json",
   "compilerOptions": {
     "outDir": "./lib",
-    "rootDir": "./src",
-    "tsBuildInfoFile": "tsconfig.esm.tsbuildinfo"
+    "rootDir": "./src"
   },
   "include": ["src"]
 }

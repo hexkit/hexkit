@@ -1,0 +1,43 @@
+{
+  "author": "Roberto Pintos López",
+  "bugs": {
+    "url": "https://github.com/hexkit/hexkit/issues"
+  },
+  "description": "Hexkit changesets changelog generator",
+  "devDependencies": {
+    "@changesets/types": "6.1.0",
+    "@hexkit/eslint-config": "workspace:*",
+    "@hexkit/prettier-config": "workspace:*",
+    "@hexkit/typescript-config": "workspace:*",
+    "eslint": "9.39.2",
+    "prettier": "3.7.4",
+    "rimraf": "6.1.2",
+    "tslib": "2.8.1",
+    "typescript": "5.9.3"
+  },
+  "keywords": [],
+  "devEngines": {
+    "pnpm": "^10.13.1"
+  },
+  "license": "MIT",
+  "module": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js"
+  },
+  "name": "@hexkit/changelog-generator",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hexkit/hexkit.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "build:clean": "rimraf lib",
+    "format": "prettier --write ./src",
+    "lint": "eslint ./src",
+    "prebuild": "pnpm run build:clean"
+  },
+  "version": "0.1.0"
+}

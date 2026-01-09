@@ -5,6 +5,7 @@
     "@commitlint/cli": "20.3.0",
     "@commitlint/config-conventional": "20.3.0",
     "@commitlint/prompt-cli": "20.3.0",
+    "@hexkit/changelog-generator": "workspace:*",
     "husky": "9.1.7",
     "knip": "5.79.0",
     "lint-staged": "16.2.7",

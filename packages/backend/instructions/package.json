@@ -1,0 +1,37 @@
+{
+  "author": "Roberto Pintos López",
+  "bugs": {
+    "url": "https://github.com/hexkit/hexkit/issues"
+  },
+  "description": "Hexkit instructions package",
+  "devDependencies": {
+    "@hexkit/prettier-config": "workspace:*",
+    "prettier": "3.7.4"
+  },
+  "devEngines": {
+    "node": "^24.10.0",
+    "pnpm": "^10.13.1"
+  },
+  "keywords": [
+    "node",
+    "typescript"
+  ],
+  "license": "MIT",
+  "module": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js"
+  },
+  "name": "@hexkit/instructions",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hexkit/hexkit.git"
+  },
+  "scripts": {
+    "format": "prettier --write ./src"
+  },
+  "type": "module",
+  "version": "0.1.0"
+}

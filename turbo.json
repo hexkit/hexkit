@@ -10,6 +10,10 @@
       "inputs": ["src/**/*.{cts,mts,ts,tsx}"],
       "outputs": ["src/**/*.{cts,mts,ts,tsx}"]
     },
+    "@hexkit/vitest-config#format": {
+      "inputs": ["lib/**/*.{cjs,mjs,js}"],
+      "outputs": ["lib/**/*.{cjs,mjs,js}"]
+    },
     "lint": {
       "dependsOn": ["^build"],
       "inputs": ["src/**/*.{cts,mts,ts,tsx}"]

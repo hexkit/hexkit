@@ -1,7 +1,7 @@
 {
   "author": "Roberto Pintos López",
   "bugs": {
-    "url": "https://github.com/hexkit/monorepo/issues"
+    "url": "https://github.com/hexkit/hexkit/issues"
   },
   "description": "Hexkit patterns package",
   "devDependencies": {
@@ -33,7 +33,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hexkit/monorepo.git"
+    "url": "git+https://github.com/hexkit/hexkit.git"
   },
   "scripts": {
     "build": "tsc",

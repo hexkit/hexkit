@@ -11,15 +11,15 @@
   "type": "module",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hexkit/monorepo/issues"
+    "url": "https://github.com/hexkit/hexkit/issues"
   },
-  "homepage": "https://github.com/hexkit/monorepo#readme",
+  "homepage": "https://github.com/hexkit/hexkit#readme",
   "publishConfig": {
     "access": "public"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hexkit/monorepo.git"
+    "url": "git+https://github.com/hexkit/hexkit.git"
   },
   "version": "0.1.0"
 }

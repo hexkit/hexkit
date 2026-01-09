@@ -1,0 +1,24 @@
+{
+  "name": "@hexkit/foundation-scripts",
+  "private": true,
+  "description": "Common scripts for monorepo packages",
+  "devDependencies": {
+    "@hexkit/prettier-config": "workspace:*",
+    "prettier": "3.7.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hexkit/hexkit.git"
+  },
+  "author": "Roberto Pintos López",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hexkit/hexkit/issues"
+  },
+  "type": "module",
+  "homepage": "https://github.com/hexkit/hexkit#readme",
+  "bin": {
+    "foundation-get-affected-projects": "./bin/getAffectedProjects.js",
+    "foundation-get-affected-project-chunks": "./bin/getAffectedProjectsChunks.js"
+  }
+}

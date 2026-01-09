@@ -1,6 +1,6 @@
 import { Wrapper } from '@hexkit/patterns';
 
-import { PrismaTransactionWrapper } from '../models/PrismaTransactionWrapper';
+import { PrismaTransactionWrapper } from '../models/PrismaTransactionWrapper.js';
 
 export abstract class BasePrismaService<TDelegate, TTransactionClient> {
   protected readonly _delegate: TDelegate;

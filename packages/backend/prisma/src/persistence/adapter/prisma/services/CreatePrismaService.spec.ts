@@ -13,9 +13,9 @@ vitest.mock(import('../models/PrismaTransactionWrapper.js'));
 
 import { Builder, BuilderAsync, Wrapper } from '@hexkit/patterns';
 
-import { PrismaCreationDelegate } from '../models/PrismaCreationDelegate';
-import { PrismaTransactionWrapper } from '../models/PrismaTransactionWrapper';
-import { CreatePrismaService } from './CreatePrismaService';
+import { PrismaCreationDelegate } from '../models/PrismaCreationDelegate.js';
+import { PrismaTransactionWrapper } from '../models/PrismaTransactionWrapper.js';
+import { CreatePrismaService } from './CreatePrismaService.js';
 
 class CreatePrismaServiceMock extends CreatePrismaService<
   unknown,

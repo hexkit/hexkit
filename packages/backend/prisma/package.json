@@ -5,11 +5,12 @@
   },
   "description": "Backend prisma library",
   "devDependencies": {
-    "@hexkit/eslint-config": "workspace:^",
-    "@hexkit/patterns": "workspace:^",
-    "@hexkit/prettier-config": "workspace:^",
-    "@hexkit/typescript-config": "workspace:^",
-    "@hexkit/vitest-config": "workspace:^",
+    "@hexkit/eslint-config": "workspace:*",
+    "@hexkit/patterns": "workspace:*",
+    "@hexkit/prettier-config": "workspace:*",
+    "@hexkit/stryker-config": "workspace:*",
+    "@hexkit/typescript-config": "workspace:*",
+    "@hexkit/vitest-config": "workspace:*",
     "@stryker-mutator/core": "9.4.0",
     "@stryker-mutator/typescript-checker": "9.4.0",
     "@stryker-mutator/vitest-runner": "9.4.0",
@@ -51,5 +52,6 @@
     "test:uncommitted": "pnpm run test --changed=HEAD",
     "test:unit": "pnpm run test --project Unit"
   },
+  "type": "module",
   "version": "0.1.0"
 }

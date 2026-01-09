@@ -1,5 +1,5 @@
-import { TransactionWrapper } from '../../../application/models/TransactionWrapper';
-import { PrismaClient } from './PrismaClient';
+import { TransactionWrapper } from '../../../application/models/TransactionWrapper.js';
+import { PrismaClient } from './PrismaClient.js';
 
 type Properties<TTransactionClient> = [
   Promise<void>,

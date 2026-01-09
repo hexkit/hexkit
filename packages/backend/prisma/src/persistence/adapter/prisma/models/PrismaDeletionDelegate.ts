@@ -1,4 +1,4 @@
-import { PrismaBatchPayload } from './PrismaBatchPayload';
+import { PrismaBatchPayload } from './PrismaBatchPayload.js';
 
 export interface PrismaDeletionDelegate<TDeleteArgs, TDeleteManyArgs, TModel> {
   deleteMany(args?: TDeleteManyArgs): Promise<PrismaBatchPayload>;

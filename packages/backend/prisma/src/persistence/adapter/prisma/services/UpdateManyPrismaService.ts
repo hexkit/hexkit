@@ -1,7 +1,7 @@
 import { Builder, BuilderAsync, Wrapper } from '@hexkit/patterns';
 
-import { PrismaUpdateDelegate } from '../models/PrismaUpdateDelegate';
-import { BasePrismaService } from './BasePrismaService';
+import { PrismaUpdateDelegate } from '../models/PrismaUpdateDelegate.js';
+import { BasePrismaService } from './BasePrismaService.js';
 
 export abstract class UpdateManyPrismaService<
   TModel,

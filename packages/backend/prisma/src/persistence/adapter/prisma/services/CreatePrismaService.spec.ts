@@ -114,20 +114,20 @@ describe(CreatePrismaService, () => {
 
       describe('when called', () => {
         let prismaCreateArgsFixture: unknown;
-        let prismaModuleFixture: unknown;
+        let prismaModelFixture: unknown;
         let modelFixture: unknown;
 
         let result: unknown;
 
         beforeAll(async () => {
           prismaCreateArgsFixture = Symbol();
-          prismaModuleFixture = Symbol();
+          prismaModelFixture = Symbol();
           modelFixture = Symbol();
 
           prismaCreateArgsFromCreateQueryBuilder.build.mockResolvedValueOnce(
             prismaCreateArgsFixture,
           );
-          delegateMock.create.mockResolvedValueOnce(prismaModuleFixture);
+          delegateMock.create.mockResolvedValueOnce(prismaModelFixture);
           modelFromPrismaModelBuilder.build.mockResolvedValueOnce(modelFixture);
 
           result = await createPrismaService.create(queryFixture);
@@ -156,7 +156,7 @@ describe(CreatePrismaService, () => {
         it('should call modelFromPrismaModelBuilder.build()', () => {
           expect(
             modelFromPrismaModelBuilder.build,
-          ).toHaveBeenCalledExactlyOnceWith(prismaModuleFixture);
+          ).toHaveBeenCalledExactlyOnceWith(prismaModelFixture);
         });
 
         it('should return the expected result', () => {
@@ -190,7 +190,7 @@ describe(CreatePrismaService, () => {
           PrismaCreationDelegate<unknown, any, unknown>
         >;
         let prismaCreateArgsFixture: unknown;
-        let prismaModuleFixture: unknown;
+        let prismaModelFixture: unknown;
         let modelFixture: unknown;
 
         let result: unknown;
@@ -201,7 +201,7 @@ describe(CreatePrismaService, () => {
             createManyAndReturn: vitest.fn(),
           };
           prismaCreateArgsFixture = Symbol();
-          prismaModuleFixture = Symbol();
+          prismaModelFixture = Symbol();
           modelFixture = Symbol();
 
           getDelegateMock.mockReturnValueOnce(transactionDelegateMock);
@@ -209,7 +209,7 @@ describe(CreatePrismaService, () => {
             prismaCreateArgsFixture,
           );
           transactionDelegateMock.create.mockResolvedValueOnce(
-            prismaModuleFixture,
+            prismaModelFixture,
           );
           modelFromPrismaModelBuilder.build.mockResolvedValueOnce(modelFixture);
 
@@ -248,7 +248,7 @@ describe(CreatePrismaService, () => {
         it('should call modelFromPrismaModelBuilder.build()', () => {
           expect(
             modelFromPrismaModelBuilder.build,
-          ).toHaveBeenCalledExactlyOnceWith(prismaModuleFixture);
+          ).toHaveBeenCalledExactlyOnceWith(prismaModelFixture);
         });
 
         it('should return the expected result', () => {

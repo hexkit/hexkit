@@ -43,5 +43,5 @@
     "prebuild": "pnpm run build:clean"
   },
   "type": "module",
-  "version": "1.5.2"
+  "version": "0.1.0"
 }

@@ -25,5 +25,11 @@ export default {
       project: [],
     },
     "packages/backend/*": defaultWorkspaceProjectConfig,
+    "packages/backend/tools/*": defaultWorkspaceProjectConfig,
+    "packages/backend/tools/prettier-config": {
+      entry: ["{cjs,esm}/index.{js,d.ts}"],
+      ignoreDependencies: defaultWorkspaceProjectConfig.ignoreDependencies,
+      project: defaultWorkspaceProjectConfig.project,
+    },
   },
 } satisfies KnipConfig;

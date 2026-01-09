@@ -11,7 +11,11 @@ const defaultWorkspaceProjectConfig: WorkspaceProjectConfig & {
     "**/?(*.)+(spec|spec-d).[jt]s?(x)",
   ],
   ignoreDependencies: ["tslib"],
-  project: ["**/*.{js,cjs,mjs,jsx,ts,cts,mts,tsx}!", "!**/__mocks__"],
+  project: [
+    "**/*.{js,cjs,mjs,jsx,ts,cts,mts,tsx}!",
+    "!vitest.config.stryker.mjs",
+    "!**/__mocks__",
+  ],
 };
 
 export default {

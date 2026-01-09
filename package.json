@@ -2,12 +2,12 @@
   "name": "root",
   "devDependencies": {
     "@changesets/cli": "2.29.8",
-    "@commitlint/cli": "20.3.0",
-    "@commitlint/config-conventional": "20.3.0",
-    "@commitlint/prompt-cli": "20.3.0",
+    "@commitlint/cli": "20.3.1",
+    "@commitlint/config-conventional": "20.3.1",
+    "@commitlint/prompt-cli": "20.3.1",
     "@hexkit/changelog-generator": "workspace:*",
     "husky": "9.1.7",
-    "knip": "5.79.0",
+    "knip": "5.80.2",
     "lint-staged": "16.2.7",
     "turbo": "2.7.2"
   },
@@ -27,6 +27,6 @@
     "unused": "knip"
   },
   "license": "MIT",
-  "packageManager": "pnpm@10.26.1",
+  "packageManager": "pnpm@10.27.0",
   "private": true
 }

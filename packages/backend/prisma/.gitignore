@@ -1,0 +1,19 @@
+# Typescript compiled files
+/lib/**
+
+/tsconfig.tsbuildinfo
+
+# Test coverage report
+/coverage
+
+# Test mutation report
+/reports
+
+# Test temporal files
+/tmp
+
+# node modules
+/node_modules/
+
+# Turborepo files
+.turbo/

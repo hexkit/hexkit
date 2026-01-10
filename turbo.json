@@ -33,6 +33,11 @@
       "inputs": ["src/**/*.{cts,mts,ts,tsx}"],
       "outputs": ["coverage/**"]
     },
+    "test:mutation": {
+      "dependsOn": ["^build"],
+      "inputs": ["src/**/*.{cts,mts,ts}"],
+      "outputs": ["reports/**"]
+    },
     "test:uncommitted": {
       "dependsOn": ["^build"],
       "inputs": ["src/**/*.{cts,mts,ts,tsx}"],

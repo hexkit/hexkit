@@ -23,6 +23,7 @@
     "test:integration": "turbo test:integration",
     "test": "turbo run test",
     "test:coverage": "turbo run test:coverage",
+    "test:mutation": "turbo run test:mutation",
     "test:uncommitted": "turbo run test:uncommitted --filter [HEAD]",
     "test:unit": "turbo run test:unit",
     "unused": "knip"

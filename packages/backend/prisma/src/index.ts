@@ -6,5 +6,7 @@ export { type PrismaBatchPayload } from './persistence/adapter/prisma/models/Pri
 
 export { CreatePrismaService } from './persistence/adapter/prisma/services/CreatePrismaService.js';
 export { CreateManyPrismaService } from './persistence/adapter/prisma/services/CreateManyPrismaService.js';
+export { DeleteManyPrismaService } from './persistence/adapter/prisma/services/DeleteManyPrismaService.js';
+export { FindFirstPrismaService } from './persistence/adapter/prisma/services/FindFirstPrismaService.js';
 export { FindManyPrismaService } from './persistence/adapter/prisma/services/FindManyPrismaService.js';
 export { UpdateManyPrismaService } from './persistence/adapter/prisma/services/UpdateManyPrismaService.js';

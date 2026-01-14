@@ -55,7 +55,7 @@ describe(DotEnvLoader, () => {
           expect(process.env[envVarName]).toBe(envVarValue);
         });
 
-        describe('when called .index', () => {
+        describe('when called .env', () => {
           let result: unknown;
 
           beforeAll(() => {

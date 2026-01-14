@@ -1,3 +1,3 @@
-# @hexkit/prisma
+# @hexkit/dotenv
 
-Hexkit monorepo prisma package.
+Hexkit monorepo dotenv package.

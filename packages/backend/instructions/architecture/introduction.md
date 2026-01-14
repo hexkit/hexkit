@@ -30,3 +30,5 @@ An overview of each layer can be found in these docs:
 *   [Introduction](./adapter/introduction.md): Infrastructure and implementation-specific code (e.g., database repositories).
 *   **Patterns**
     *   [Adapter](./adapter/patterns/adapter.md): Implements or utilizes ports to connect the core application with external drivers.
+*   **Inversify patterns**
+    *   [Inversify container modules](./adapter/inversify-patterns/container-module.md): Organizes dependency injection bindings using InversifyJS.

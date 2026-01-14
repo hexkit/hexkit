@@ -1,6 +1,7 @@
 ---
 "@hexkit/eslint-config": minor
 "@hexkit/prettier-config": minor
+"@hexkit/stryker-config": minor
 "@hexkit/typescript-config": minor
 "@hexkit/vitest-config": minor
 ---

@@ -9,8 +9,6 @@
 # Test mutation report
 /reports
 
-/stryker-tmp
-
 # Test temporal files
 /tmp
 

@@ -23,8 +23,8 @@ An overview of each layer can be found in these docs:
     *   [Controller](./application/patterns/controller.md): Handles requests agnostically, independent of the specific framework.
     *   [Port](./application/patterns/port.md): Defines contracts for inputs and outputs to decouple the core from external libraries.
     *   [Use Case Handler](./application/patterns/use-case-handler.md): Manages application logic separate from pure domain logic.
-*   **Services**
-    *   [Environment Service](./application/patterns/services/environment-service.md): Provides centralized, type-safe access to application configuration and environment variables.
+*   *   **Services**
+        *   [Environment Service](./application/patterns/services/environment-service.md): Provides centralized, type-safe access to application configuration and environment variables.
 
 ## Adapter Layer
 *   [Introduction](./adapter/introduction.md): Infrastructure and implementation-specific code (e.g., database repositories).

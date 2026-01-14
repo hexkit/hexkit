@@ -75,7 +75,7 @@ export class EnvironmentLoader extends DotEnvLoader<Environment> {
   }
 
   protected _parseEnv(env: Record<string, string>): Environment {
-    const rawEnv: EnvironmentRaw = cleanEnv(process.env, {
+    const rawEnv: EnvironmentRaw = cleanEnv(env, {
       BACKEND_USER_CORS_ORIGINS: json(),
       BACKEND_USER_DATABASE_URL: url(),
       BACKEND_USER_EXTERNAL_SERVICE_API_KEY: str(),

@@ -1,4 +1,4 @@
-# Create Prima adapter package
+# Create Prisma adapter package
 
 This task involves creating a new package within the monorepo that serves as a Prisma adapter for the application. This package will implement the repository pattern using Prisma ORM to interact with the database.
 
@@ -35,6 +35,24 @@ pnpm exec prisma init --datasource-provider postgresql --output ../generated
 ```
 
 Update `.env` file and `prisma.config.ts` file to use env variables prefixed with `BACKEND_[APP]_PRISMA_`.
+
+`prisma.config.ts`:
+```ts
+import path from 'node:path';
+
+import 'dotenv/config';
+
+import { defineConfig, env } from 'prisma/config';
+
+export default defineConfig({
+  datasource: {
+    url: env('BACKEND_USER_DATABASE_CONNECTION_STRING'),
+    shadowDatabaseUrl: env('BACKEND_USER_SHADOW_DATABASE_CONNECTION_STRING'),
+  },
+  schema: path.join('prisma', 'schema.prisma'),
+});
+
+```
 
 Implement base services:
 

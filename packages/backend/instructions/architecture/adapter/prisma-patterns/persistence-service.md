@@ -1,4 +1,4 @@
-# Persitence Service Pattern with Prisma
+# Persistence Service Pattern with Prisma
 
 This pattern consist of creating an adapter (and therefore, implementing a port) that uses the Prisma ORM to interact with the database.
 

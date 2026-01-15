@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "@hexkit/prettier-config": "workspace:*",
-    "prettier": "3.7.4"
+    "prettier": "3.8.0"
   },
   "peerDependencies": {
     "@eslint/js": "^9.39.2"

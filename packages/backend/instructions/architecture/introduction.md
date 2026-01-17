@@ -20,6 +20,7 @@ An overview of each layer can be found in these docs:
 ## Application Layer
 *   [Introduction](./application/introduction.md): Agnostic application logic that coordinates tasks.
 *   **Patterns**
+    *   [API Model](./application/patterns/api-model.md): Versioned representations of domain data for REST APIs.
     *   [Controller](./application/patterns/controller.md): Handles requests agnostically, independent of the specific framework.
     *   [Port](./application/patterns/port.md): Defines contracts for inputs and outputs to decouple the core from external libraries.
     *   [Use Case Handler](./application/patterns/use-case-handler.md): Manages application logic separate from pure domain logic.
@@ -32,5 +33,6 @@ An overview of each layer can be found in these docs:
     *   [Adapter](./adapter/patterns/adapter.md): Implements or utilizes ports to connect the core application with external drivers.
 *   **Inversify patterns**
     *   [Inversify container modules](./adapter/inversify-patterns/container-module.md): Organizes dependency injection bindings using InversifyJS.
+    *   [Inversify controller](./adapter/inversify-patterns/controller.md): HTTP controllers using `@inversifyjs/http-core`.
 *   **Prisma patterns**
     *   [Prisma persistence service](./adapter/prisma-patterns/persistence-service.md): Implements repositories using Prisma ORM to interact with the database.

@@ -14,7 +14,7 @@ import { inject } from 'inversify';
 
 import { UserManagementInputPort } from '../../../application/ports/UserManagementInputPort.js';
 import { UserV1 } from '../../../application/models/UserV1.js';
-import { CreateUserRequestV1 } from '../models/CreateUserRequestV1.js';
+import { CreateUserRequestV1 } from '../../../application/models/CreateUserRequestV1.js';
 import { UserV1FromUserBuilder } from '../builders/UserV1FromUserBuilder.js';
 
 @Controller('/v1/users')

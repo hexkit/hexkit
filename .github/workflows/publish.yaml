@@ -37,6 +37,16 @@ jobs:
         env:
           GH_TOKEN: ${{ steps.create_token.outputs.token }}
 
+      - name: Inspect GitHub App installation permissions
+        run: gh api /installation
+        env:
+          GH_TOKEN: ${{ steps.create_token.outputs.token }}
+
+      - name: Check repository permissions for this token
+        run: gh api repos/hexkit/hexkit
+        env:
+          GH_TOKEN: ${{ steps.create_token.outputs.token }}
+
       - name: Remove changesets if needed to force a release
         if: ${{ inputs.remove-changesets == true }}
         run: rm -f .changeset/*.md

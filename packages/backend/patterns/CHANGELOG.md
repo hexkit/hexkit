@@ -1,6 +1,8 @@
----
-"@hexkit/patterns": minor
----
+# @hexkit/patterns
+
+## 0.2.0
+
+### Minor Changes
 
 - Added `Writable`
 - Added `Handler`

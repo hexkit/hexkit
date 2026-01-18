@@ -60,11 +60,12 @@ jobs:
       - name: Open PR
         if: steps.commit.outputs.has_changes == 'true'
         run: |
-          gh pr view changeset-release/master --json number || \
-          gh pr create \
-            --base master \
-            --head changeset-release/master \
-            --title "[Changesets] Bump package versions" \
-            --body "Automated release PR"
+          if [ "$(gh pr list --head changeset-release/master --state open --json number --jq 'length')" -eq 0 ]; then
+            gh pr create \
+              --base master \
+              --head changeset-release/master \
+              --title "[Changesets] Bump package versions" \
+              --body "Automated release PR"
+          fi
         env:
           GH_TOKEN: ${{ steps.create_token.outputs.token }}

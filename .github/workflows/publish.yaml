@@ -33,6 +33,10 @@ jobs:
           app-id: ${{ vars.GH_APP_ID }}
           private-key: ${{ secrets.GH_APP_PRIVATE_KEY }}
 
+      - run: gh api /installation/repositories
+        env:
+          GH_TOKEN: ${{ steps.create_token.outputs.token }}
+
       - name: Remove changesets if needed to force a release
         if: ${{ inputs.remove-changesets == true }}
         run: rm -f .changeset/*.md

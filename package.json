@@ -8,7 +8,7 @@
     "@hexkit/changelog-generator": "workspace:*",
     "@hexkit/foundation-scripts": "workspace:*",
     "husky": "9.1.7",
-    "knip": "5.81.0",
+    "knip": "5.82.0",
     "lint-staged": "16.2.7",
     "turbo": "2.7.5"
   },

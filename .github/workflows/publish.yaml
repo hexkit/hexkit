@@ -12,7 +12,6 @@ on:
 jobs:
   publish:
     name: Publish npm packages
-    environment: CI
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -25,4 +24,4 @@ jobs:
       - name: Publish npm packages
         run: pnpm run release
         env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: ${{ inputs.npm-token }}

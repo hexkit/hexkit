@@ -160,7 +160,62 @@ pnpm exec lint-staged
 
 ```
 
-10. Install dependencies:
+10. Add turborepo config:
+
+**turbo.json**
+```json
+{
+  "$schema": "https://turbo.build/schema.json",
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "inputs": ["src/**/*.{cts,mts,ts,tsx}"],
+      "outputs": ["dist/**", "lib/**"]
+    },
+    "format": {
+      "inputs": ["src/**/*.{cts,mts,ts,tsx}"],
+      "outputs": ["src/**/*.{cts,mts,ts,tsx}"]
+    },
+    "lint": {
+      "dependsOn": ["^build"],
+      "inputs": ["src/**/*.{cts,mts,ts,tsx}"]
+    },
+    "test": {
+      "dependsOn": ["^build"],
+      "inputs": ["src/**/*.{cts,mts,ts,tsx}"],
+      "outputs": []
+    },
+    "test:integration": {
+      "dependsOn": ["^build"],
+      "inputs": ["src/**/*.{cts,mts,ts,tsx}"],
+      "outputs": []
+    },
+    "test:coverage": {
+      "dependsOn": ["^build"],
+      "inputs": ["src/**/*.{cts,mts,ts,tsx}"],
+      "outputs": ["coverage/**"]
+    },
+    "test:mutation": {
+      "dependsOn": ["^build"],
+      "inputs": ["src/**/*.{cts,mts,ts}"],
+      "outputs": ["reports/**"]
+    },
+    "test:uncommitted": {
+      "dependsOn": ["^build"],
+      "inputs": ["src/**/*.{cts,mts,ts,tsx}"],
+      "outputs": []
+    },
+    "test:unit": {
+      "dependsOn": ["^build"],
+      "inputs": ["src/**/*.{cts,mts,ts,tsx}"],
+      "outputs": []
+    }
+  },
+  "ui": "tui"
+}
+```
+
+11. Install dependencies:
 
 ```bash
 pnpm i

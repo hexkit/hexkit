@@ -1,6 +1,8 @@
----
-"@hexkit/prisma": minor
----
+# @hexkit/prisma
+
+## 0.2.0
+
+### Minor Changes
 
 - Added `CreatePrismaService`.
 - Added `CreateManyPrismaService`.

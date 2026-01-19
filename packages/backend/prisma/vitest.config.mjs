@@ -1,3 +1,3 @@
-import { defaultConfig } from '@hexkit/vitest-config';
+import config from '@hexkit/vitest-config';
 
-export default defaultConfig;
+export default config;

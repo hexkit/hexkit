@@ -35,5 +35,9 @@ export default {
       ignoreDependencies: defaultWorkspaceProjectConfig.ignoreDependencies,
       project: defaultWorkspaceProjectConfig.project,
     },
+    "packages/backend/tools/vitest-config": {
+      ...defaultWorkspaceProjectConfig,
+      entry: [...defaultWorkspaceProjectConfig.entry, "lib/index.d.ts"],
+    },
   },
 } satisfies KnipConfig;

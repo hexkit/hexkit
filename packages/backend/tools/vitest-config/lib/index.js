@@ -1,7 +1,7 @@
 import swc from 'unplugin-swc';
 import { defineConfig } from 'vitest/config';
 
-export const defaultConfig = defineConfig({
+const defaultConfig = defineConfig({
   test: {
     coverage: {
       all: false,
@@ -67,3 +67,5 @@ export const strykerConfig = defineConfig({
     },
   },
 });
+
+export default defaultConfig;

@@ -12,6 +12,9 @@ on:
         options:
           - notaphplover
 
+permissions:
+  contents: write
+
 jobs:
   publish:
     name: Publish npm packages
@@ -35,16 +38,10 @@ jobs:
 
       - uses: ./.github/actions/setup
 
-      - uses: actions/create-github-app-token@29824e69f54612133e76f7eaac726eef6c875baf # v2.2.1
-        id: create_token
-        with:
-          app-id: ${{ vars.GH_APP_ID }}
-          private-key: ${{ secrets.GH_APP_PRIVATE_KEY }}
-
       - name: Publish npm packages
         uses: changesets/action@e0145edc7d9d8679003495b11f87bd8ef63c0cba # v1.5.3
         with:
           publish: pnpm run release
         env:
-          GITHUB_TOKEN: ${{ steps.create_token.outputs.token }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

@@ -4,7 +4,7 @@
   "description": "Common typescript config for hexkit monorepo packages",
   "devDependencies": {
     "@hexkit/prettier-config": "workspace:*",
-    "prettier": "3.8.0"
+    "prettier": "3.8.1"
   },
   "license": "MIT",
   "bugs": {

@@ -1,5 +1,11 @@
 # @hexkit/instructions
 
+## 0.3.1
+
+### Patch Changes
+
+- Updated npmignore config to include some missing files
+
 ## 0.3.0
 
 ### Minor Changes

@@ -29,6 +29,15 @@ export default {
       project: [],
     },
     "packages/backend/*": defaultWorkspaceProjectConfig,
+    "packages/backend/instructions": {
+      ...defaultWorkspaceProjectConfig,
+      ignoreDependencies: [
+        ...defaultWorkspaceProjectConfig.ignoreDependencies,
+        "@hexkit/dotenv",
+        "envalid",
+        "inversify",
+      ],
+    },
     "packages/backend/tools/*": defaultWorkspaceProjectConfig,
     "packages/backend/tools/prettier-config": {
       entry: ["{cjs,esm}/index.{js,d.ts}"],

@@ -11,6 +11,16 @@ The pattern typically consists of four main components:
 3. **Environment Loader**: A service responsible for loading, parsing, and validating environment variables
 4. **Environment Service**: A simple service that provides access to the loaded environment configuration
 
+You SHOULD create these components using the `hexkit` cli generator (available in @hexkit/instructions):
+
+```bash
+pnpm exec hexkit create env:service -p ./packages/backend/apps/user/env
+```
+
+This command will generate the necessary files in the specified package path passed to the `-p` option.
+
+You can update generated models later to fit your application's specific configuration needs.
+
 ## Example
 
 ### Environment Model
@@ -132,4 +142,4 @@ export class EnvironmentService {
 
 ## Usage
 
-The Environment Service is typically injected into other services, builders, or controllers that need access to configuration:
+The Environment Service is typically injected into other services, builders, or controllers that need access to configuration.

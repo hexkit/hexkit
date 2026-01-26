@@ -1,9 +1,33 @@
 {
   "author": "Roberto Pintos López",
+  "bin": {
+    "hexkit": "./bin/hexkit.js"
+  },
   "bugs": {
     "url": "https://github.com/hexkit/hexkit/issues"
   },
   "description": "Hexkit instructions package",
+  "dependencies": {
+    "yargs": "^18.0.0"
+  },
+  "devDependencies": {
+    "@hexkit/dotenv": "workspace:*",
+    "@hexkit/eslint-config": "workspace:*",
+    "@hexkit/prettier-config": "workspace:*",
+    "@hexkit/typescript-config": "workspace:*",
+    "@hexkit/vitest-config": "workspace:*",
+    "@types/node": "24.10.9",
+    "@types/yargs": "17.0.35",
+    "@vitest/coverage-v8": "4.0.18",
+    "envalid": "8.1.1",
+    "eslint": "9.39.2",
+    "inversify": "7.11.0",
+    "prettier": "3.8.0",
+    "rimraf": "6.1.2",
+    "tslib": "2.8.1",
+    "typescript": "5.9.3",
+    "vitest": "4.0.18"
+  },
   "devEngines": {
     "node": "^24.10.0",
     "pnpm": "^10.13.1"
@@ -24,6 +48,18 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hexkit/hexkit.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "build:clean": "rimraf lib",
+    "format": "prettier --write ./src",
+    "lint": "eslint ./src",
+    "prebuild": "pnpm run build:clean",
+    "test": "vitest run",
+    "test:integration": "pnpm run test --project Integration",
+    "test:coverage": "pnpm run test:unit --coverage",
+    "test:uncommitted": "pnpm run test --changed=HEAD",
+    "test:unit": "pnpm run test --project Unit"
   },
   "type": "module",
   "version": "0.2.0"

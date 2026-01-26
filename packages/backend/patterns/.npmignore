@@ -1,11 +1,19 @@
 /.turbo
+/coverage
+/reports
 
-**/*.ts
-lib/**/*.d.ts.map
-!lib/index.d.ts
-!lib/index.d.ts.map
+!/lib/**
+/lib/**/*.d.ts.map
+/lib/**/*.js.map
+/lib/**/*.spec.js
+/lib/**/*.spec.js.map
+
+/src
 
 .lintstagedrc.json
 eslint.config.mjs
 prettier.config.mjs
+stryker.config.mjs
 tsconfig.json
+vitest.config.mjs
+vitest.config.stryker.mjs

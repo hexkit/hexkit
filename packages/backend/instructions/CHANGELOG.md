@@ -1,5 +1,15 @@
 # @hexkit/instructions
 
+## 0.4.0
+
+### Minor Changes
+
+- Updated hexkit cli with `prisma:service:base` create feature
+
+### Patch Changes
+
+- Updated prisma adapter instructions with right runtime import
+
 ## 0.3.1
 
 ### Patch Changes

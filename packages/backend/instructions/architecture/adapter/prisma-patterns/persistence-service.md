@@ -17,7 +17,7 @@ import {
   PrismaClient,
   User as PrismaUser,
 } from '../../../../../generated';
-import * as runtime from '../../../../../generated/runtime/library.js';
+import * as runtime from '../../../../../generated/runtime/client.js';
 import { BaseFindManyPrismaService } from '../../../../foundation/adapter/prisma/services/BaseFindManyPrismaService.js';
 import { UserFromUserPrismaBuilder } from '../builders/UserFromUserPrismaBuilder.js';
 import { UserPrismaFindManyArgsFromUserFindQueryBuilder } from '../builders/UserPrismaFindManyArgsFromUserFindQueryBuilder.js';

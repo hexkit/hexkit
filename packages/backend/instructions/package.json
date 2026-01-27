@@ -14,6 +14,7 @@
     "@hexkit/dotenv": "workspace:*",
     "@hexkit/eslint-config": "workspace:*",
     "@hexkit/prettier-config": "workspace:*",
+    "@hexkit/prisma": "workspace:*",
     "@hexkit/typescript-config": "workspace:*",
     "@hexkit/vitest-config": "workspace:*",
     "@types/node": "24.10.9",

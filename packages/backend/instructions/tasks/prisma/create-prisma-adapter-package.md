@@ -60,8 +60,8 @@ Implement base services:
 ```ts
 import { CreatePrismaService } from '@hexkit/prisma';
 
-import { PrismaClient } from '../../../../../../generated';
-import * as runtime from '../../../../../../generated/runtime/library.js';
+import { PrismaClient } from '../../../../../generated';
+import * as runtime from '../../../../../generated/runtime/client.js';
 
 export abstract class BaseCreatePrismaService<
   TModel,
@@ -82,8 +82,8 @@ export abstract class BaseCreatePrismaService<
 ```ts
 import { CreateManyPrismaService } from '@hexkit/prisma';
 
-import { PrismaClient } from '../../../../../../generated';
-import * as runtime from '../../../../../../generated/runtime/library.js';
+import { PrismaClient } from '../../../../../generated';
+import * as runtime from '../../../../../generated/runtime/client.js';
 
 export abstract class BaseCreateManyPrismaService<
   TModel,
@@ -104,8 +104,8 @@ export abstract class BaseCreateManyPrismaService<
 ```ts
 import { DeleteManyPrismaService } from '@hexkit/prisma';
 
-import { PrismaClient } from '../../../../../../generated';
-import * as runtime from '../../../../../../generated/runtime/library.js';
+import { PrismaClient } from '../../../../../generated';
+import * as runtime from '../../../../../generated/runtime/client.js';
 
 export abstract class BaseDeleteManyPrismaService<
   TModel,
@@ -126,8 +126,8 @@ export abstract class BaseDeleteManyPrismaService<
 ```ts
 import { FindFirstPrismaService } from '@hexkit/prisma';
 
-import { PrismaClient } from '../../../../../../generated';
-import * as runtime from '../../../../../../generated/runtime/library.js';
+import { PrismaClient } from '../../../../../generated';
+import * as runtime from '../../../../../generated/runtime/client.js';
 
 export abstract class BaseFindFirstPrismaService<
   TModel,
@@ -148,8 +148,8 @@ export abstract class BaseFindFirstPrismaService<
 ```ts
 import { FindManyPrismaService } from '@hexkit/prisma';
 
-import { PrismaClient } from '../../../../../../generated';
-import * as runtime from '../../../../../../generated/runtime/library.js';
+import { PrismaClient } from '../../../../../generated';
+import * as runtime from '../../../../../generated/runtime/client.js';
 
 export abstract class BaseFindManyPrismaService<
   TModel,
@@ -170,8 +170,8 @@ export abstract class BaseFindManyPrismaService<
 ```ts
 import { UpdateManyPrismaService } from '@hexkit/prisma';
 
-import { PrismaClient } from '../../../../../../generated';
-import * as runtime from '../../../../../../generated/runtime/library.js';
+import { PrismaClient } from '../../../../../generated';
+import * as runtime from '../../../../../generated/runtime/client.js';
 
 export abstract class BaseUpdateManyPrismaService<
   TModel,

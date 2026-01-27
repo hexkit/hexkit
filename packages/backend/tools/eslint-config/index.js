@@ -2,7 +2,7 @@
 
 import process from 'node:process';
 
-import { defineConfig } from '@eslint/config-helpers';
+import { defineConfig, globalIgnores } from '@eslint/config-helpers';
 import eslint from '@eslint/js';
 import vitest from '@vitest/eslint-plugin';
 import tseslint from 'typescript-eslint';
@@ -162,14 +162,19 @@ function buildBaseConfig() {
   };
 }
 
-export function buildDefaultConfig() {
+/**
+ * Builds the default ESLint configuration.
+ * @param {string[]} ignorePatterns - An array of glob patterns to ignore.
+ */
+export function buildDefaultConfig(ignorePatterns = []) {
   const baseRules = buildBaseConfig();
 
   const vitestPlugin = /** @type {import('@eslint/config-helpers').Plugin} */ (
     /** @type {unknown} */ (vitest)
   );
 
-  return defineConfig(
+  /** @type {import('@eslint/config-helpers').ConfigWithExtends[]} */
+  const configPatterns = [
     {
       ...baseRules,
       files: ['**/*.{cjs,mts,ts,tsx}'],
@@ -230,5 +235,11 @@ export function buildDefaultConfig() {
     /** @type {import('@eslint/config-helpers').ConfigWithExtends} */ (
       eslintPrettierConfig
     ),
-  );
+  ];
+
+  if (ignorePatterns.length > 0) {
+    configPatterns.push(globalIgnores(ignorePatterns));
+  }
+
+  return defineConfig(...configPatterns);
 }

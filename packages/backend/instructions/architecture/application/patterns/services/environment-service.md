@@ -14,7 +14,7 @@ The pattern typically consists of four main components:
 You SHOULD create these components using the `hexkit` cli generator (available in @hexkit/instructions):
 
 ```bash
-pnpm exec hexkit create env:service -p ./packages/backend/apps/user/env
+pnpm exec hexkit create env:service -p ./packages/backend/apps/[app]/env
 ```
 
 This command will generate the necessary files in the specified package path passed to the `-p` option.

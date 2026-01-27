@@ -54,7 +54,15 @@ export default defineConfig({
 
 ```
 
-Implement base services:
+Implement base services using the `hexkit` CLI generator (available in @hexkit/instructions):
+
+```bash
+pnpm exec hexkit create prisma:service:base -p ./packages/backend/apps/[app]/prisma-adapter
+```
+
+This command will generate the necessary files in the specified package path passed to the `-p` option.
+
+### Generated base services reference
 
 `src/foundation/adapter/prisma/services/BaseCreatePrismaService.ts`:
 ```ts
@@ -108,15 +116,11 @@ import { PrismaClient } from '../../../../../generated';
 import * as runtime from '../../../../../generated/runtime/client.js';
 
 export abstract class BaseDeleteManyPrismaService<
-  TModel,
   TDeleteQuery,
   TPrismaDeleteManyArgs,
-  TPrismaModel,
 > extends DeleteManyPrismaService<
-  TModel,
   TDeleteQuery,
   TPrismaDeleteManyArgs,
-  TPrismaModel,
   Omit<PrismaClient, runtime.ITXClientDenyList>
 > {}
 

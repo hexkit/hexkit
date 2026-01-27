@@ -1,9 +1,11 @@
 import { ArgumentsCamelCase, Argv, type CommandModule } from 'yargs';
 
 import { createEnvironmentService } from '../generators/createEnvironmentService.js';
+import { createPrismaBaseServices } from '../generators/createPrismaBaseServices.js';
 
 enum PatternEnum {
   envService = 'env:service',
+  prismaServiceBase = 'prisma:service:base',
 }
 
 const AVAILABLE_PATTERNS: PatternEnum[] = Object.values(PatternEnum);
@@ -41,6 +43,12 @@ export const createCommand: CommandModule<unknown, CreateCommandArgs> = {
           await createEnvironmentService(packagePath);
           console.log(
             `✓ Created ${PatternEnum.envService} modules in package "${packagePath}"`,
+          );
+          break;
+        case PatternEnum.prismaServiceBase:
+          await createPrismaBaseServices(packagePath);
+          console.log(
+            `✓ Created ${PatternEnum.prismaServiceBase} modules in package "${packagePath}"`,
           );
           break;
       }

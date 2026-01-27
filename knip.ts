@@ -34,6 +34,7 @@ export default {
       ignoreDependencies: [
         ...defaultWorkspaceProjectConfig.ignoreDependencies,
         "@hexkit/dotenv",
+        "@hexkit/prisma",
         "envalid",
         "inversify",
       ],

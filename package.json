@@ -2,13 +2,13 @@
   "name": "root",
   "devDependencies": {
     "@changesets/cli": "2.29.8",
-    "@commitlint/cli": "20.4.0",
-    "@commitlint/config-conventional": "20.4.0",
-    "@commitlint/prompt-cli": "20.4.0",
+    "@commitlint/cli": "20.4.1",
+    "@commitlint/config-conventional": "20.4.1",
+    "@commitlint/prompt-cli": "20.4.1",
     "@hexkit/changelog-generator": "workspace:*",
     "@hexkit/foundation-scripts": "workspace:*",
     "husky": "9.1.7",
-    "knip": "5.82.1",
+    "knip": "5.83.0",
     "lint-staged": "16.2.7",
     "turbo": "2.8.1"
   },

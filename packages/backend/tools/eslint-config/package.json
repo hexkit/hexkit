@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "@hexkit/prettier-config": "workspace:*",
-    "@types/node": "24.10.11",
+    "@types/node": "24.10.12",
     "prettier": "3.8.1"
   },
   "peerDependencies": {

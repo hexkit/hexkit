@@ -21,7 +21,7 @@
     "@types/yargs": "17.0.35",
     "@vitest/coverage-v8": "4.0.18",
     "envalid": "8.1.1",
-    "eslint": "9.39.2",
+    "eslint": "9.39.3",
     "inversify": "7.11.0",
     "prettier": "3.8.1",
     "rimraf": "6.1.3",

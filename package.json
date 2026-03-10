@@ -9,7 +9,7 @@
     "@hexkit/foundation-scripts": "workspace:*",
     "husky": "9.1.7",
     "knip": "5.86.0",
-    "lint-staged": "16.3.2",
+    "lint-staged": "16.3.3",
     "turbo": "2.8.12"
   },
   "scripts": {

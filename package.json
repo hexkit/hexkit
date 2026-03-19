@@ -10,7 +10,7 @@
     "husky": "9.1.7",
     "knip": "5.88.1",
     "lint-staged": "16.4.0",
-    "turbo": "2.8.16"
+    "turbo": "2.8.20"
   },
   "scripts": {
     "build": "turbo run build",

@@ -5,7 +5,7 @@
   },
   "description": "Backend dotenv library",
   "dependencies": {
-    "dotenv": "^17.3.1"
+    "dotenv": "^17.4.0"
   },
   "devDependencies": {
     "@hexkit/eslint-config": "workspace:*",

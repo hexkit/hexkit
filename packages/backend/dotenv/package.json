@@ -12,7 +12,7 @@
     "@hexkit/prettier-config": "workspace:*",
     "@hexkit/typescript-config": "workspace:*",
     "@hexkit/vitest-config": "workspace:*",
-    "@types/node": "24.12.3",
+    "@types/node": "24.12.4",
     "@vitest/coverage-v8": "4.1.6",
     "eslint": "9.39.4",
     "prettier": "3.8.3",
